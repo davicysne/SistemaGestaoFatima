@@ -1,9 +1,10 @@
 [build]
-  command = "npm run build"
+  command = "npm run build && mkdir -p dist/server/node_modules/tslib && cp node_modules/tslib/tslib.es6.mjs dist/server/node_modules/tslib/tslib.es6.mjs"
   publish = "dist/client"
 
 [functions]
   directory = "dist/server"
+  node_bundler = "esbuild"
 
 [[redirects]]
   from = "/*"
