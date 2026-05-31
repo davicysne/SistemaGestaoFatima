@@ -28,7 +28,7 @@ type Order = {
 };
 
 const columns: { key: Order["status"]; label: string; icon: any; tone: string }[] = [
-  { key: "agendado", label: "Agendamentos", icon: Calendar, tone: "bg-primary text-primary-foreground" },
+  { key: "agendado", label: "A produzir", icon: Calendar, tone: "bg-primary text-primary-foreground" },
   { key: "em_producao", label: "Em Produção", icon: ChefHat, tone: "bg-warning text-warning-foreground" },
   { key: "finalizado", label: "Finalizado", icon: CheckCircle2, tone: "bg-success text-success-foreground" },
 ];
